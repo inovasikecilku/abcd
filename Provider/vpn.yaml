@@ -2977,5 +2977,7 @@ rules:
   - DOMAIN-SUFFIX,youporn.com,REJECT
   - DOMAIN-SUFFIX,cdn77.scoreuniverse.com,REJECT
   - DOMAIN-SUFFIX,widgets.stripst.com,REJECT
+  - DOMAIN-KEYWORD,jav,REJECT
+  - DOMAIN-KEYWORD,porn,REJECT
 #========== Website Blocked ==========#
   - MATCH,Umum
