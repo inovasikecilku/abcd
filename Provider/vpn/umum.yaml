@@ -1,90 +1,31 @@
 proxies:
-- name: Athamedia
+- name: Singapore
   type: vmess
   server: akrab.cloudns.pro
   port: 443
-  uuid: 8e86b10d-2230-4411-9314-33bd40d0c97d
+  uuid: 6ffb5370-9250-11ed-b738-205c6d5f5d78
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: id-atha2.bypass.id
+  servername: sg-atha.v2-ray.com
   network: ws
   ws-opts:
-    path: /fastssh/pre_290121939/8VheiTNpi3GFk7Mt/
+    path: /fastssh
     headers:
-      Host: id-atha2.bypass.id
-
-- name: Hurricane Electric
-  type: vmess
-  server: akrab.cloudns.pro
-  port: 443
-  uuid: 8e86b10d-2230-4411-9314-33bd40d0c97d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sg-v2ray-ws.bypass.id
-  network: ws
-  ws-opts:
-    path: /fastssh/pre_290121939/8VheiTNpi3GFk7Mt/
-    headers:
-      Host: sg-v2ray-ws.bypass.id 
-
+      Host: sg-atha.v2-ray.com
+      
 - name: Industri Kreatif Digital
   server: akrab.cloudns.pro
   port: 443
   type: trojan
-  password: 9f4badad-bf91-4ab2-a839-e3edea06209a
+  password: 43a941f0-9251-11ed-92d4-1239d0255272
   skip-cert-verify: true
-  sni: ikd2.onevpn.my.id
-  network: ws
-  ws-opts:
-    path: /trojanws
-    headers:
-      Host: ikd2.onevpn.my.id
-  udp: true
-
-- name: HE-WS
-  server: akrab.cloudns.pro
-  port: 443
-  type: trojan
-  password: f1a57cc0-88dc-11ed-a176-1577c1651679
-  skip-cert-verify: true
-  sni: sg-trojan.1server.co
+  sni: idtj-ikd.bonds.id
   network: ws
   ws-opts:
     path: /howdy
     headers:
-      Host: sg-trojan.1server.co
-  udp: true
-
-- name: HESS-WS
-  server: akrab.cloudns.pro
-  port: 443
-  type: trojan
-  password: 4009fd60-88dd-11ed-8a0b-1577c1651679
-  skip-cert-verify: true
-  sni: sg-trojan-ss.serverip.xyz
-  network: ws
-  ws-opts:
-    path: /howdy
-    headers:
-      Host: sg-trojan-ss.serverip.xyz
-  udp: true
-
-- name: SGGS-WS
-  server: akrab.cloudns.pro
-  port: 443
-  type: trojan
-  password: f1eca920-88dd-11ed-a8ec-1577c1651679
-  skip-cert-verify: true
-  sni: sggs.1server.co
-  network: ws
-  ws-opts:
-    path: /howdy
-    headers:
-      Host: sggs.1server.co
+      Host: idtj-ikd.bonds.id
   udp: true
