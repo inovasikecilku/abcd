@@ -10,8 +10,6 @@ dns:
   default-nameserver:
     - 94.140.14.14
     - 94.140.15.15
-  enhanced-mode:fake-ip
-  fake-ip-range:198.18.0.1/16
   nameserver:
     - 94.140.14.14
     - 94.140.15.15
