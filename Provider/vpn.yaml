@@ -20,19 +20,21 @@ dns:
 
 proxy-providers:
   Umum:
-    type: file
+    type: http
+    url: https://github.com/inovasikecilku/abcd/raw/main/Provider/Kuota/umum.yaml
     path: ./umum.yaml
     health-check:
       enable: true
-      interval: 36000
+      interval: 300
       url: http://www.gstatic.com/generate_204
 
   Sosmed:
-    type: file
+    type: http
+    url: https://github.com/inovasikecilku/abcd/raw/main/Provider/Kuota/sosmed.yaml
     path: ./sosmed.yaml
     health-check:
       enable: true
-      interval: 36000
+      interval: 300
       url: http://www.gstatic.com/generate_204
 
 proxy-groups:
