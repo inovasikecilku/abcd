@@ -2528,7 +2528,7 @@ rules:
   - DOMAIN-SUFFIX,yandexadexchange.net,REJECT
 
   # > custom by aftonpc
-  - DOMAIN-SUFFIX,match.adsrvr.org
+  - DOMAIN-SUFFIX,match.adsrvr.org,REJECT
   - DOMAIN-SUFFIX,tsyndicate.com,REJECT
   - DOMAIN-SUFFIX,pxl.tsyndicate.com,REJECT
   - DOMAIN-SUFFIX,cdn.tsyndicate.com,REJECT
