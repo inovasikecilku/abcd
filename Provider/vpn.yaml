@@ -21,7 +21,7 @@ dns:
 proxy-providers:
   Umum:
     type: http
-    url: https://github.com/inovasikecilku/abcd/raw/main/Provider/Kuota/umum.yaml
+    url: https://github.com/inovasikecilku/abcd/raw/main/Provider/vpn/umum.yaml
     path: ./umum.yaml
     health-check:
       enable: true
@@ -30,7 +30,7 @@ proxy-providers:
 
   Sosmed:
     type: http
-    url: https://github.com/inovasikecilku/abcd/raw/main/Provider/Kuota/sosmed.yaml
+    url: https://github.com/inovasikecilku/abcd/raw/main/Provider/vpn/sosmed.yaml
     path: ./sosmed.yaml
     health-check:
       enable: true
