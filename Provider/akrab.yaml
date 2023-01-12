@@ -477,7 +477,7 @@ rules:
   - DOMAIN-SUFFIX,garena.vn,DIRECT
   - DOMAIN-SUFFIX,garenanow.com,DIRECT
   - DOMAIN-SUFFIX,seagroup.com,DIRECT
- #MOBILE LEGENDS
+ # MOBILE LEGENDS
   #- DOMAIN-SUFFIX,youngjoygame.com,DIRECT
   - DOMAIN-SUFFIX,mobilelegends.com,DIRECT
   - DOMAIN-SUFFIX,app.adjust.net.in,DIRECT
