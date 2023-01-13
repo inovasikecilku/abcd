@@ -29,3 +29,17 @@ proxies:
     headers:
       Host: idtj-ikd.bonds.id
   udp: true
+
+- name: Hurricane Electric
+  server: sg3-trojan.bonds.id
+  port: 443
+  type: trojan
+  password: 0c1a4470-92dc-11ed-9a3e-1239d0255272
+  skip-cert-verify: true
+  sni: sg3-trojan.bonds.id
+  network: ws
+  ws-opts:
+    path: /howdy
+    headers:
+      Host: sg3-trojan.bonds.id
+  udp: true
