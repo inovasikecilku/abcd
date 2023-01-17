@@ -1,7 +1,5 @@
 proxies:
-# TROJAN
-# Trojan GFW
-- name: Trojan GFW
+- name: Trojan
   type: trojan
   server: SERVER.COM
   port: 443
@@ -9,7 +7,7 @@ proxies:
   udp: true
   sni: DOMAIN.COM
   skip-cert-verify: true
-# Trojan WS
+
 - name: Trojan WS
   server: SERVER.COM
   port: 443
@@ -23,7 +21,7 @@ proxies:
     headers:
       Host: SERVER.COM
   udp: true
-# Trojan gRPC
+
 - name: Trojan gRPC
   type: trojan
   server: SERVER.COM
@@ -36,9 +34,7 @@ proxies:
   grpc-opts:
     grpc-service-name: NAMAGRPC
 
-# VMESS
-# Vmess WS
-- name: Vmess WS (SNI)
+- name: Vmess WS TLS
   type: vmess
   server: SERVER.COM
   port: 443
@@ -54,7 +50,7 @@ proxies:
     path: /PATH
     headers:
       Host: SERVER.COM
-# Vmess WS Non TLS
+
 - name: Vmess WS Non TLS
   type: vmess
   server: SERVER.COM
