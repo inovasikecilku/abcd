@@ -1,28 +1,3 @@
-# > Block
-DOMAIN-SUFFIX,pagead2.googlesyndication.com
-DOMAIN-SUFFIX,ads.google.com
-DOMAIN-SUFFIX,p77-sign-va.tiktokcdn.com
-DOMAIN-SUFFIX,p45-quota.icloud.com
-DOMAIN-SUFFIX,34-courier.push.apple.com
-DOMAIN-SUFFIX,mssdk-sg.tiktok.com
-DOMAIN-SUFFIX,mcs-sg.tiktok.com
-DOMAIN-SUFFIX,mcs-sg.tiktokv.com
-DOMAIN-SUFFIX,webcast22-normal-c-useast2a.tiktokv.com
-DOMAIN-SUFFIX,api22-core-c-useast2a.tiktokv.com
-DOMAIN-SUFFIX,p16-sign-va.tiktokcdn.com
-DOMAIN-SUFFIX,frontier-i18n.tiktokv.com
-DOMAIN-SUFFIX,tiktokv.com
-
-# > Media.net
-DOMAIN-SUFFIX,media.net
-
-# > Doubleclick.net
-DOMAIN-SUFFIX,doubleclick.net
-
-# > FastClick
-DOMAIN-SUFFIX,fastclick.com
-DOMAIN-SUFFIX,fastclick.net
-
 # > Amazon
 DOMAIN-SUFFIX,adtago.s3.amazonaws.com
 DOMAIN-SUFFIX,analyticsengine.s3.amazonaws.com
@@ -82,52 +57,6 @@ DOMAIN-SUFFIX,metrika.yandex.ru
 DOMAIN-SUFFIX,click.sender.yandex.ru
 DOMAIN-SUFFIX,share.yandex.ru
 DOMAIN-SUFFIX,yandexadexchange.net
-
-  # > custom by aftonpc
-DOMAIN-SUFFIX,match.adsrvr.org
-DOMAIN-SUFFIX,tsyndicate.com
-DOMAIN-SUFFIX,pxl.tsyndicate.com
-DOMAIN-SUFFIX,cdn.tsyndicate.com
-DOMAIN-SUFFIX,syndication.realsrv.com
-DOMAIN-SUFFIX,adsco.re
-DOMAIN-SUFFIX,syndication.exosrv.com
-DOMAIN-SUFFIX,nereserv.com
-DOMAIN-SUFFIX,clickadilla.com
-DOMAIN-SUFFIX,adxadserv.com
-DOMAIN-SUFFIX,static-clst.avgle.com
-DOMAIN-SUFFIX,forlumineoner.com
-DOMAIN-SUFFIX,jaavnacsdw.com
-DOMAIN-SUFFIX,taaqhr6axacd2um.com
-DOMAIN-SUFFIX,stagepopkek.com
-DOMAIN-SUFFIX,kxnggkh2nj.com
-DOMAIN-SUFFIX,limurol.com
-DOMAIN-SUFFIX,abservinean.com
-DOMAIN-SUFFIX,static.adsafeprotected.com
-DOMAIN-SUFFIX,cloudflareinsights.com
-DOMAIN-SUFFIX,aeeg5idiuenbi7erger.com
-DOMAIN-SUFFIX,histats.com
-DOMAIN-SUFFIX,fdelphaswcealifornica.com
-DOMAIN-SUFFIX,morrowfreezer.com
-DOMAIN-SUFFIX,akmxts.com
-DOMAIN-SUFFIX,berthsorry.com
-DOMAIN-SUFFIX,xxxijmp.com
-DOMAIN-SUFFIX,jads.co
-DOMAIN-SUFFIX,berthsorry.com
-DOMAIN-SUFFIX,lanternpossibly.com
-DOMAIN-SUFFIX,cloudflareinsights.com
-DOMAIN-SUFFIX,plumposterity.com
-DOMAIN-SUFFIX,amung.us
-DOMAIN-SUFFIX,daisycontroversy.com
-DOMAIN-SUFFIX,juicyads.com
-DOMAIN-SUFFIX,xlviirdr.com
-DOMAIN-SUFFIX,addthis.com
-DOMAIN-SUFFIX,jwpcdn.com
-DOMAIN-SUFFIX,cuddlethehyena.com
-DOMAIN-SUFFIX,imasdk.googleapis.com
-DOMAIN-SUFFIX,fdelphaswcealifornica.com
-
-# > Google Analytics
-DOMAIN-SUFFIX,google-analytics.com
 
 # > Hotjar
 DOMAIN-SUFFIX,api-hotjar.com
@@ -207,13 +136,6 @@ DOMAIN-SUFFIX,analytics.tiktok.com
 DOMAIN-SUFFIX,ads.youtube.com
 DOMAIN-SUFFIX,youtube.cleverads.vn
 
-# > # > Mix ====================
-# >  Yahoo
-
-# >  Yandex
-
-# > # > OEM ====================
-
 # > Realme
 DOMAIN-SUFFIX,bdapi-in-ads.realmemobile.com
 
@@ -283,7 +205,7 @@ DOMAIN-SUFFIX,books-analytics-events.apple.com
 DOMAIN-SUFFIX,stocks-analytics-events.apple.com
 DOMAIN-SUFFIX,stocks-analytics-events.news.apple-dns.net
 
-# > Situs Porn
+# > Situs Jahat
 DOMAIN-SUFFIX,0plkijj.vip
 DOMAIN-SUFFIX,114av.xyz
 DOMAIN-SUFFIX,128100.xyz
