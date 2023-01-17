@@ -1,6 +1,7 @@
 # Instagram
 DOMAIN-SUFFIX,cdninstagram.com
 DOMAIN-SUFFIX,instagram.com
+
 # Whatsapp
 DOMAIN-SUFFIX,m.me
 DOMAIN-SUFFIX,oculus.com
@@ -8,6 +9,7 @@ DOMAIN-SUFFIX,oculuscdn.com
 DOMAIN-SUFFIX,rocksdb.org
 DOMAIN-SUFFIX,whatsapp.com
 DOMAIN-SUFFIX,whatsapp.net
+
 # Facebook
 DOMAIN-SUFFIX,messenger.com
 DOMAIN-SUFFIX,facebook.com
