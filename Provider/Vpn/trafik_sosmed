@@ -1,14 +1,14 @@
-  # Instagram
+# Instagram
 DOMAIN-SUFFIX,cdninstagram.com
 DOMAIN-SUFFIX,instagram.com
-  # Whatsapp
+# Whatsapp
 DOMAIN-SUFFIX,m.me
 DOMAIN-SUFFIX,oculus.com
 DOMAIN-SUFFIX,oculuscdn.com
 DOMAIN-SUFFIX,rocksdb.org
 DOMAIN-SUFFIX,whatsapp.com
 DOMAIN-SUFFIX,whatsapp.net
-  # Facebook
+# Facebook
 DOMAIN-SUFFIX,messenger.com
 DOMAIN-SUFFIX,facebook.com
 DOMAIN-SUFFIX,facebook.net
@@ -36,7 +36,8 @@ IP-CIDR,66.220.144.0/20
 IP-CIDR,69.171.224.0/19
 IP-CIDR,69.63.176.0/20
 IP-CIDR,74.119.76.0/22
-  # Line
+
+# Line
 DOMAIN-SUFFIX,lin.ee
 DOMAIN-SUFFIX,line.me
 DOMAIN-SUFFIX,line.naver.jp
@@ -62,7 +63,8 @@ IP-CIDR,103.2.30.0/23
 IP-CIDR,125.209.208.0/20
 IP-CIDR,147.92.128.0/17
 IP-CIDR,203.104.144.0/21
-  # Telegram
+
+# Telegram
 DOMAIN-SUFFIX,telegra.ph
 DOMAIN-SUFFIX,telegram.org
 DOMAIN-SUFFIX,t.me
@@ -76,7 +78,8 @@ IP-CIDR,91.108.16.0/22
 IP-CIDR,91.108.20.0/22
 IP-CIDR,91.108.56.0/22
 IP-CIDR,149.154.160.0/20
-  # Twitter
+
+# Twitter
 DOMAIN-SUFFIX,pscp.tv
 DOMAIN-SUFFIX,periscope.tv
 DOMAIN-SUFFIX,t.co
@@ -89,7 +92,8 @@ DOMAIN-KEYWORD,twitter
 DOMAIN-SUFFIX,twttr.net
 DOMAIN-SUFFIX,twttr.com
 DOMAIN-SUFFIX,twitter.jp
-  # Spotify
+
+# Spotify
 DOMAIN-SUFFIX,open.spotify.com
 DOMAIN-SUFFIX,audio-ak-spotify-com.akamaized.net
 DOMAIN-SUFFIX,byspotify.com
@@ -109,13 +113,16 @@ DOMAIN-SUFFIX,spotifyforbrands.com
 DOMAIN-SUFFIX,spotifyjobs.com
 DOMAIN-KEYWORD,-spotify-com
 DOMAIN-KEYWORD,spotify.com
-  # Deezer
+
+# Deezer
 DOMAIN-SUFFIX,deezer.com
 DOMAIN-SUFFIX,dzcdn.net
-  # JOOX
+
+# JOOX
 DOMAIN-SUFFIX,joox.com
 DOMAIN-KEYWORD,jooxweb-api
-  # Google
+
+# Google
 DOMAIN-SUFFIX,googleapis.com
 DOMAIN-SUFFIX,gstatic.com
 DOMAIN-SUFFIX,google.com
@@ -124,7 +131,8 @@ DOMAIN-SUFFIX,gvt1.com
 IP-CIDR,74.125.24.188/16
 IP-CIDR,172.217.194.188/16
 IP-CIDR,142.250.4.188/16
-  # Youtube
+
+# Youtube
 DOMAIN,youtubei.googleapis.com
 DOMAIN,yt3.ggpht.com
 DOMAIN-SUFFIX,.youtube.com
@@ -300,7 +308,8 @@ DOMAIN-SUFFIX,youtubekids.com
 DOMAIN-SUFFIX,youtubemobilesupport.com
 DOMAIN-SUFFIX,yt.be
 DOMAIN-SUFFIX,ytimg.com
-  # TikTok
+
+# TikTok
 DOMAIN-SUFFIX,byteoversea.com
 DOMAIN-SUFFIX,ibytedtos.com
 DOMAIN-SUFFIX,ipstatp.com
@@ -311,7 +320,8 @@ DOMAIN-SUFFIX,tik-tokapi.com
 DOMAIN-SUFFIX,tiktokcdn.com
 DOMAIN-SUFFIX,tiktokv.com
 DOMAIN-KEYWORD,-tiktokcdn-com
-  # HBO GO HKG
+
+# HBO GO HKG
 DOMAIN-SUFFIX,hbogoasia.com
 DOMAIN-SUFFIX,hbogoasia.hk
 DOMAIN,bcbolthboa-a.akamaihd.net
@@ -363,7 +373,8 @@ DOMAIN-SUFFIX,hbo.com
 DOMAIN-SUFFIX,hbogo.com
 DOMAIN-SUFFIX,hbonow.com
 DOMAIN-SUFFIX,hbomax.com
-  # Netflix
+
+# Netflix
 DOMAIN-SUFFIX,netflix.com
 DOMAIN-SUFFIX,netflix.net
 DOMAIN-SUFFIX,nflxext.com
@@ -395,7 +406,8 @@ IP-CIDR,198.45.48.0/20
 IP-CIDR,34.210.42.111/32
 IP-CIDR,52.89.124.203/32
 IP-CIDR,54.148.37.5/32
-  # Disney+
+
+# Disney+
 DOMAIN-KEYWORD,hotstar
 DOMAIN-SUFFIX,hotstar.com
 DOMAIN-SUFFIX,expressplay.com
