@@ -28,26 +28,3 @@ proxies:
     host: www.google.com
   sni: www.google.com
   udp: true
-
-- name: Shadowsocks
-  type: ss
-  server: idsocks.ipservers.xyz
-  port: 1443
-  cipher: aes-256-cfb
-  password: IIE8iB7R0J
-  plugin: obfs
-  plugin-opts:
-    mode: tls
-    host: idsocks.ipservers.xyz
-    
-- name: ShadowsocksR
-  type: ssr
-  server: idsocks.ipservers.xyz
-  port: 8388
-  cipher: aes-256-cfb
-  password: IIE8iB7R0J
-  protocol: auth_chain_a
-  obfs: tls1.2_ticket_auth
-  protocol-param: "#"
-  obfs-param: idsocks.ipservers.xyz
-  udp: true
