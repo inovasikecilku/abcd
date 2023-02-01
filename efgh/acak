@@ -1,3 +1,53 @@
 #Dynamic SG Vultr, Expired 09.02.2023
 proxies:
-  - {name: dynamic-sg1b.obfs.xyz, server: dynamic-sg1b.obfs.xyz, port: 443, type: vmess, uuid: 2c6e4b3e-8aa6-45d2-b6f6-aac777b393aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: www.google.com, network: ws, ws-opts: {path: /worryfree, headers: {Host: www.google.com}}, udp: true}
+- {name: dynamic-sg1b.obfs.xyz, server: dynamic-sg1b.obfs.xyz, port: 443, type: vmess, uuid: 2c6e4b3e-8aa6-45d2-b6f6-aac777b393aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: www.google.com, network: ws, ws-opts: {path: /worryfree, headers: {Host: www.google.com}}, udp: true}
+
+# Akun Hysteria
+- name: Hysteria
+  type: hysteria
+  server: 128.199.233.181
+  port: 443
+  auth_str: hysteria
+  obfs: hysteria
+  protocol: udp
+  up: "200 Mbps"
+  down: "1000 Mbps"
+  sni: www.google.com
+  skip-cert-verify: true
+  fast-open: true
+
+# Akun Snell
+- name: Snell
+  type: snell
+  server: 128.199.233.181
+  port: 443
+  psk: akrabcoid
+  version: 3
+  obfs-opts:
+    mode: tls
+    host: www.google.com
+  sni: www.google.com
+  udp: true
+
+- name: Shadowsocks
+  type: ss
+  server: idsocks.ipservers.xyz
+  port: 1443
+  cipher: aes-256-cfb
+  password: IIE8iB7R0J
+  plugin: obfs
+  plugin-opts:
+    mode: tls
+    host: idsocks.ipservers.xyz
+    
+- name: ShadowsocksR
+  type: ssr
+  server: idsocks.ipservers.xyz
+  port: 8388
+  cipher: aes-256-cfb
+  password: IIE8iB7R0J
+  protocol: auth_chain_a
+  obfs: tls1.2_ticket_auth
+  protocol-param: "#"
+  obfs-param: idsocks.ipservers.xyz
+  udp: true
