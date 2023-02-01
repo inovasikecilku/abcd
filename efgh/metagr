@@ -199,14 +199,14 @@ proxy-groups:
   - Selector
   
 rules:
-  - GEOIP,id,DIRECT
+  - GEOIP,id,Indonesia
   - GEOSITE,category-ads-all,Pilih
   - GEOSITE,category-porn,Pilih
-  - RULE-SET,Hiburan,Selector
-  - RULE-SET,Olshop,Selector
+  - RULE-SET,Hiburan,Indonesia
+  - RULE-SET,Olshop,Indonesia
   - RULE-SET,Games,DIRECT
-  - RULE-SET,Blocked,REJECT
-  - RULE-SET,Aplikasi,Selector
+  - RULE-SET,Blocked,Pilih
+  - RULE-SET,Aplikasi,Indonesia
   - MATCH,Semua
   
 rule-providers:
