@@ -1,6 +1,6 @@
 #Dynamic SG Vultr, Expired 09.02.2023
 proxies:
-- {name: dynamic-sg1b.obfs.xyz, server: dynamic-sg1b.obfs.xyz, port: 443, type: vmess, uuid: 2c6e4b3e-8aa6-45d2-b6f6-aac777b393aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: www.google.com, network: ws, ws-opts: {path: /worryfree, headers: {Host: www.google.com}}, udp: true}
+- {name: Dynamic SG Vultr, server: dynamic-sg1b.obfs.xyz, port: 443, type: vmess, uuid: 2c6e4b3e-8aa6-45d2-b6f6-aac777b393aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: www.google.com, network: ws, ws-opts: {path: /worryfree, headers: {Host: www.google.com}}, udp: true}
 
 # Akun Hysteria
 - name: Hysteria
