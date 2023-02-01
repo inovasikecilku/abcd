@@ -79,6 +79,7 @@ proxies:
   type: vless
   uuid: fa8f7d88-5dd2-43e6-9319-05cb02cb28a9
   cipher: auto
+  udp: true
   tls: true
   skip-cert-verify: true
   servername: www.google.com
@@ -94,6 +95,7 @@ proxies:
   type: vless
   uuid: 8c830d12-1e70-4f1b-bf84-baadceed269b
   cipher: auto
+  udp: true
   tls: true
   skip-cert-verify: true
   servername: www.google.com
