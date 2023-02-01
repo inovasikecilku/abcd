@@ -190,7 +190,7 @@ proxies:
 # Akun Vless Websocket
 
 # Akun Trojan Go Websocket, Expired 09.02.2023
-  - name: id1go.ipservers.xyz
+  - name: Trojan Go ID1
     server: id1go.ipservers.xyz
     port: 443
     type: trojan
@@ -203,7 +203,8 @@ proxies:
       headers:
         Host: id1go.ipservers.xyz
     udp: true
-  - name: id2go.ipservers.xyz
+
+  - name: Trojan Go ID2
     server: id2go.ipservers.xyz
     port: 443
     type: trojan
