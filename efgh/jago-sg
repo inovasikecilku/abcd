@@ -104,7 +104,7 @@ proxies:
 # Akun Vless Websocket
 
 # Akun Trojan Go Websocket, Expired 09.02.2023
-- name: sg2go.ipservers.xyz
+- name: Trojan Go SG2
   server: sg2go.ipservers.xyz
   port: 443
   type: trojan
