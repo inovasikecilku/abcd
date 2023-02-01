@@ -235,7 +235,7 @@ rules:
   - RULE-SET,Aplikasi,Selector
   - MATCH,Semua
   
-  rule-providers:
+rule-providers:
   Hiburan:
     type: http
     behavior: classical
