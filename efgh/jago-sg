@@ -1,4 +1,4 @@
-# Akun Sahdowsocks
+# Akun Shadowsocks
 Expired 05.02.2023
   - {name: Shadowsocks-SG1, server: sg1socks.ipservers.xyz, port: 1443, type: ss, cipher: aes-256-cfb, password: aaUwOzj48U, udp: true}
   - {name: ShadowsocksR-SG1, server: sg1socks.ipservers.xyz, port: 8388, type: ssr, cipher: aes-256-cfb, password: aaUwOzj48U, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
