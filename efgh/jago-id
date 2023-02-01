@@ -1,6 +1,5 @@
 proxies:
-# Akun Vmess Websocket
-# Expired 06.02.2023
+# Akun Vmess Websocket, Expired 06.02.2023
   - name: Vmess WS ID1 TlS
     server: id1-ray.ipservers.xyz
     port: 443
@@ -70,8 +69,7 @@ proxies:
     udp: true
 # Akun Vmess Websocket
 
-# Akun V2ray DNS Websocket
-# Expired 06.02.2023
+# Akun V2ray DNS Websocket, Expired 06.02.2023
   - name: V2rayDNS WS ID1
     server: id1-ray.ipservers.xyz
     port: 443
@@ -107,8 +105,7 @@ proxies:
     udp: true
 # Akun V2ray DNS Websocket
 
-# Akun Vless Websocket
-# Expired 05.02.2023
+# Akun Vless Websocket, Expired 05.02.2023
   - name: Vless WS ID1
     server: id1vless.ipservers.xyz
     port: 443
@@ -141,3 +138,32 @@ proxies:
         Host: id2vless.ipservers.xyz
     udp: true
 # Akun Vless Websocket
+
+# Akun Trojan Go Websocket, Expired 09.02.2023
+  - name: id1go.ipservers.xyz
+    server: id1go.ipservers.xyz
+    port: 443
+    type: trojan
+    password: jagoanssh-goid202022023
+    skip-cert-verify: true
+    sni: id1go.ipservers.xyz
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: id1go.ipservers.xyz
+    udp: true
+  - name: id2go.ipservers.xyz
+    server: id2go.ipservers.xyz
+    port: 443
+    type: trojan
+    password: jagoanssh-goid102022023
+    skip-cert-verify: true
+    sni: id2go.ipservers.xyz
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: id2go.ipservers.xyz
+    udp: true
+# Akun Trojan Go Websocket
