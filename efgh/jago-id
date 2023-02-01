@@ -1,52 +1,52 @@
 proxies:
 # Akun Shadowsocks dan ShadowsocksR, Expired 05.02.2023
-- name: Shadowsocks ID1
-  type: ss
-  server: idsocks.ipservers.xyz
-  port: 1443
-  cipher: aes-256-cfb
-  password: IIE8iB7R0J
-  plugin: obfs
-  plugin-opts:
-    mode: tls
-    host: idsocks.ipservers.xyz
-  udp: true
+  - name: Shadowsocks ID1
+    type: ss
+    server: idsocks.ipservers.xyz
+    port: 1443
+    cipher: aes-256-cfb
+    password: IIE8iB7R0J
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: idsocks.ipservers.xyz
+    udp: true
 
-- name: ShadowsocksR ID1
-  server: idsocks.ipservers.xyz
-  port: 8388
-  type: ssr
-  cipher: aes-256-cfb
-  password: IIE8iB7R0J
-  protocol: auth_chain_a
-  obfs: tls1.2_ticket_auth
-  protocol-param: "#"
-  obfs-param: idsocks.ipservers.xyz
-  udp: true
+  - name: ShadowsocksR ID1
+    server: idsocks.ipservers.xyz
+    port: 8388
+    type: ssr
+    cipher: aes-256-cfb
+    password: IIE8iB7R0J
+    protocol: auth_chain_a
+    obfs: tls1.2_ticket_auth
+    protocol-param: "#"
+    obfs-param: idsocks.ipservers.xyz
+    udp: true
 
-- name: Shadowsocks SG2
-  type: ss
-  server: id2socks.ipservers.xyz
-  port: 1443
-  cipher: aes-256-cfb
-  password: jaUeHIN1NW
-  plugin: obfs
-  plugin-opts:
-    mode: tls
-    host: id2socks.ipservers.xyz
-  udp: true
+  - name: Shadowsocks SG2
+    type: ss
+    server: id2socks.ipservers.xyz
+    port: 1443
+    cipher: aes-256-cfb
+    password: jaUeHIN1NW
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: id2socks.ipservers.xyz
+    udp: true
 
-- name: ShadowsocksR SG2
-  server: id2socks.ipservers.xyz
-  port: 8388
-  type: ssr
-  cipher: aes-256-cfb
-  password: jaUeHIN1NW
-  protocol: auth_chain_a
-  obfs: tls1.2_ticket_auth
-  protocol-param: "#"
-  obfs-param: id2socks.ipservers.xyz
-  udp: true
+  - name: ShadowsocksR SG2
+    server: id2socks.ipservers.xyz
+    port: 8388
+    type: ssr
+    cipher: aes-256-cfb
+    password: jaUeHIN1NW
+    protocol: auth_chain_a
+    obfs: tls1.2_ticket_auth
+    protocol-param: "#"
+    obfs-param: id2socks.ipservers.xyz
+    udp: true
 # Akun Shadowsocks dan ShadowsocksR
 
 # Akun Vmess Websocket, Expired 06.02.2023
@@ -162,6 +162,7 @@ proxies:
     type: vless
     uuid: 767818a4-e58d-4f3f-91cd-b4a2de5f3f85
     cipher: auto
+    udp: true
     tls: true
     skip-cert-verify: true
     servername: www.google.com
@@ -177,6 +178,7 @@ proxies:
     type: vless
     uuid: 7cbc5adf-4bba-47fd-8cf4-5ce9c7435235
     cipher: auto
+    udp: true
     tls: true
     skip-cert-verify: true
     servername: www.google.com
