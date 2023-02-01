@@ -53,7 +53,7 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
   Acak:
     type: http
-    url: "bit.ly/3DvC3dk"
+    url: "https://bit.ly/3DvC3dk"
     interval: 86400
     path: ./acak.yaml
     health-check:
