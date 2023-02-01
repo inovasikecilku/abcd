@@ -219,17 +219,20 @@ proxy-groups:
   disable-udp: false
   proxies:
   - REJECT
+  - DIRECT
+  - Fallback
   - Loadbalance
+  - Selector
   
 rules:
   - GEOIP,id,DIRECT
-  - GEOSITE,category-ads-all,REJECT
+  - GEOSITE,category-ads-all,Pilih
   - GEOSITE,category-porn,Pilih
-  - RULE-SET,Hiburan,Indonesia
-  - RULE-SET,Olshop,Indonesia
+  - RULE-SET,Hiburan,Selector
+  - RULE-SET,Olshop,Selector
   - RULE-SET,Games,DIRECT
   - RULE-SET,Blocked,REJECT
-  - RULE-SET,Aplikasi,Indonesia
+  - RULE-SET,Aplikasi,Selector
   - MATCH,Semua
   
   rule-providers:
