@@ -1,6 +1,5 @@
 proxies:
-# Akun Shadowsocks dan ShadowsocksR
-# Expired 05.02.2023
+# Akun Shadowsocks dan ShadowsocksR, Expired 05.02.2023
 - name: Shadowsocks SG1
   type: ss
   server: sg1socks.ipservers.xyz
@@ -50,8 +49,7 @@ proxies:
   udp: true
 # Akun Shadowsocks dan ShadowsocksR
  
-# Akun Wireguard
-# Expired 07.02.2023
+# Akun Wireguard, Expired 07.02.2023
 - name: Wireguard SG2
   type: wireguard
   server: sg2wg.ipservers.xyz
@@ -71,8 +69,7 @@ proxies:
   udp: true
 # Akun Wireguard
 
-# Akun Vless Websocket
-# Expired 05.02.2023
+# Akun Vless Websocket, Expired 05.02.2023
 - name: Vless WS SG1
   server: sg1vless.ipservers.xyz
   port: 443
