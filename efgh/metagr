@@ -234,22 +234,32 @@ rules:
   
   rule-providers:
   Hiburan:
-    type: file
+    type: http
+    url: "bit.ly/3WTxyQM"
+    interval: 86400
     behavior: classical
     path: "./hiburan.yaml"
   Olshop:
-    type: file
+    type: http
+    url: "bit.ly/3Y8FMFI"
+    interval: 86400
     behavior: classical
     path: "./olshop.yaml"
   Games:
-    type: file
+    type: http
+    url: "bit.ly/3jhqEav"
+    interval: 86400
     behavior: classical
     path: "./games.yaml"
   Blocked:
-    type: file
+    type: http
+    url: "bit.ly/3Ywcph1"
+    interval: 86400
     behavior: classical
     path: "./blocked.yaml"
   Aplikasi:
-    type: file
+    type: http
+    url: "bit.ly/3wJdSoj"
+    interval: 86400
     behavior: classical
     path: "./aplikasi.yaml"
