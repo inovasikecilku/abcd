@@ -1,10 +1,71 @@
-# Akun Shadowsocks
+# Akun Shadowsocks dan ShadowsocksR
 # Expired 05.02.2023
-  - {name: Shadowsocks-SG1, server: sg1socks.ipservers.xyz, port: 1443, type: ss, cipher: aes-256-cfb, password: aaUwOzj48U, udp: true}
-  - {name: ShadowsocksR-SG1, server: sg1socks.ipservers.xyz, port: 8388, type: ssr, cipher: aes-256-cfb, password: aaUwOzj48U, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: Shadowsocks-SG2, server: sg2socks.ipservers.xyz, port: 1443, type: ss, cipher: aes-256-cfb, password: OjXiQIeUIJ, udp: true}
-  - {name: ShadowsocksR-SG2, server: sg2socks.ipservers.xyz, port: 8388, type: ssr, cipher: aes-256-cfb, password: OjXiQIeUIJ, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+- name: Shadowsocks SG1
+  type: ss
+  server: sg1socks.ipservers.xyz
+  port: 1443
+  cipher: aes-256-cfb
+  password: aaUwOzj48U
+  plugin: obfs
+  plugin-opts:
+    mode: tls
+    host: sg1socks.ipservers.xyz
+  udp: true
+
+- name: ShadowsocksR SG1
+  server: sg1socks.ipservers.xyz
+  port: 8388
+  type: ssr
+  cipher: aes-256-cfb
+  password: aaUwOzj48U
+  protocol: auth_chain_a
+  obfs: tls1.2_ticket_auth
+  protocol-param: "#"
+  obfs-param: sg1socks.ipservers.xyz
+  udp: true
+
+- name: Shadowsocks SG2
+  type: ss
+  server: sg2socks.ipservers.xyz
+  port: 1443
+  cipher: aes-256-cfb
+  password: OjXiQIeUIJ
+  plugin: obfs
+  plugin-opts:
+    mode: tls
+    host: sg1socks.ipservers.xyz
+  udp: true
+
+- name: ShadowsocksR SG2
+  server: sg2socks.ipservers.xyz
+  port: 8388
+  type: ssr
+  cipher: aes-256-cfb
+  password: OjXiQIeUIJ
+  protocol: auth_chain_a
+  obfs: tls1.2_ticket_auth
+  protocol-param: "#"
+  obfs-param: sg1socks.ipservers.xyz
+  udp: true
+# Akun Shadowsocks dan ShadowsocksR
+ 
 # Akun Wireguard
 # Expired 07.02.2023
-  - {name: Wireguard-SG2, type: wireguard, server: sg2wg.ipservers.xyz, port: 51820, ip: 10.66.66.113/24, private-key: UJTWhQVd/42VprxatTphrZCOcY5/+vL5KPdLTl/35WQ=, public-key: FrqiPLB7nGvrVllBNHq66WjM85siFZ/hutb93uYSvnk=, udp: true}
-  - {name: Wireguard-SG3, type: wireguard, server: sg3wg.ipservers.xyz, port: 51820, ip: 10.66.66.18/24, private-key: GAPZCRHRcpbcq4gXM1H5hRe+b37CCpyVt8kRF3UAhWs=, public-key: Qe5lglHwn5tVRqcVtPE4MLGr+56KydCeA3oTzXNnS30=, udp: true}
+- name: Wireguard SG2
+  type: wireguard
+  server: sg2wg.ipservers.xyz
+  port: 51820
+  ip: 10.66.66.113/24
+  private-key: UJTWhQVd/42VprxatTphrZCOcY5/+vL5KPdLTl/35WQ=
+  public-key: FrqiPLB7nGvrVllBNHq66WjM85siFZ/hutb93uYSvnk=
+  udp: true
+
+- name: Wireguard SG3
+  type: wireguard
+  server: sg3wg.ipservers.xyz
+  port: 51820
+  ip: 10.66.66.18/24
+  private-key: GAPZCRHRcpbcq4gXM1H5hRe+b37CCpyVt8kRF3UAhWs=
+  public-key: Qe5lglHwn5tVRqcVtPE4MLGr+56KydCeA3oTzXNnS30=
+  udp: true
+# Akun Wireguard
