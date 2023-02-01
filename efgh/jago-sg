@@ -105,3 +105,19 @@ proxies:
     headers:
       Host: sg2vless.ipservers.xyz
 # Akun Vless Websocket
+
+# Akun Trojan Go Websocket, Expired 09.02.2023
+  - name: sg2go.ipservers.xyz
+    server: sg2go.ipservers.xyz
+    port: 443
+    type: trojan
+    password: jagoanssh-gosg202022023
+    skip-cert-verify: true
+    sni: sg2go.ipservers.xyz
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: sg2go.ipservers.xyz
+    udp: true
+# Akun Trojan Go Websocket
