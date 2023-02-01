@@ -51,6 +51,24 @@ proxy-providers:
       enable: true
       interval: 300
       url: http://www.gstatic.com/generate_204
+  Singapura:
+    type: http
+    url: "http://bit.ly/3Rq1Qtj"
+    interval: 86400
+    path: ./singapura.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  Indonesia:
+    type: http
+    url: "http://bit.ly/3Hptfab"
+    interval: 86400
+    path: ./indonesia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
   Acak:
     type: http
     url: "https://bit.ly/3DvC3dk"
@@ -92,6 +110,26 @@ proxy-groups:
   use:
   - Europe
 
+- name: Singapura
+  type: load-balance
+  strategy: consistent-hashing
+  disable-udp: false
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 150
+  use:
+  - Singapura
+
+- name: Indonesia
+  type: load-balance
+  strategy: consistent-hashing
+  disable-udp: false
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 150
+  use:
+  - Indonesia
+  
 - name: Acak
   type: load-balance
   strategy: consistent-hashing
@@ -101,7 +139,7 @@ proxy-groups:
   tolerance: 150
   use:
   - Acak
-
+  
 - name: Fallback
   type: fallback
   disable-udp: false
@@ -112,6 +150,8 @@ proxy-groups:
   - Asia
   - Americas
   - Europe
+  - Singapura
+  - Indonesia
   - Acak
 
 - name: Loadbalance
@@ -125,6 +165,8 @@ proxy-groups:
   - Asia
   - Americas
   - Europe
+  - Singapura
+  - Indonesia
   - Acak
 
 - name: Selector
@@ -134,6 +176,8 @@ proxy-groups:
   - Asia
   - Americas
   - Europe
+  - Singapura
+  - Indonesia
   - Acak
 
 - name: Semua
