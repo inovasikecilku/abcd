@@ -219,11 +219,12 @@ proxy-groups:
   disable-udp: false
   proxies:
   - REJECT
+  - DIRECT
   - Selector
   - Semua
   
 rules:
   - GEOIP,id,DIRECT
-  - GEOSITE,category-ads-all,REJECT
+  - GEOSITE,category-ads-all,Pilih
   - GEOSITE,category-porn,Pilih
   - MATCH,Semua
