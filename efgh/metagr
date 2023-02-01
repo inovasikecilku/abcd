@@ -102,20 +102,6 @@ proxies:
   obfs-param: idsocks.ipservers.xyz
   udp: true
 
-- name: Industri Kreatif Digital
-  type: trojan
-  server: ikd2.onevpn.my.id
-  port: 443
-  password: 9f4badad-bf91-4ab2-a839-e3edea06209a
-  skip-cert-verify: true
-  sni: ikd2.onevpn.my.id
-  network: ws
-  ws-opts:
-    path: /trojanws
-    headers:
-      Host: ikd2.onevpn.my.id
-  udp: true
-
 proxy-groups:
 - name: Umum
   type: load-balance
@@ -129,7 +115,6 @@ proxy-groups:
   - ShadowsocksR
   - Hysteria
   - Snell
-  - Industri Kreatif Digital
 
 - name: Asia
   type: load-balance
@@ -182,7 +167,6 @@ proxy-groups:
   - ShadowsocksR
   - Hysteria
   - Snell
-  - Industri Kreatif Digital
   use:
   - Asia
   - Americas
