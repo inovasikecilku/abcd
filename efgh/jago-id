@@ -1,0 +1,106 @@
+proxies:
+# Akun V2ray Vmess Websocket
+# Expired 06.02.2023
+
+  - name: Vmess WS ID1 TlS
+    server: id1-ray.ipservers.xyz
+    port: 443
+    type: vmess
+    uuid: 412c78a1-a63d-4be0-a014-6c466dcb2ca5
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: www.google.com
+    network: ws
+    ws-opts:
+      path: /JAGOANSSH/
+      headers:
+        Host: www.google.com
+    udp: true
+
+  - name: Vmess WS ID1 NTLS
+    server: id1-ray.ipservers.xyz
+    port: 80
+    type: vmess
+    uuid: 412c78a1-a63d-4be0-a014-6c466dcb2ca5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: id1-ray.ipservers.xyz
+    network: ws
+    ws-opts:
+      path: /JAGOANSSH/
+      headers:
+        Host: id1-ray.ipservers.xyz
+    udp: true
+
+  - name: Vmess WS ID2 TLS
+    server: id2-ray.ipservers.xyz
+    port: 443
+    type: vmess
+    uuid: 2c1ff0dc-583b-40b3-8367-4626b792fbcc
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: www.google.com
+    network: ws
+    ws-opts:
+      path: /JAGOANSSH/
+      headers:
+        Host: www.google.com
+    udp: true
+
+  - name: Vmess WS ID2 NTLS
+    server: id2-ray.ipservers.xyz
+    port: 80
+    type: vmess
+    uuid: 2c1ff0dc-583b-40b3-8367-4626b792fbcc
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: id2-ray.ipservers.xyz
+    network: ws
+    ws-opts:
+      path: /JAGOANSSH/
+      headers:
+        Host: id2-ray.ipservers.xyz
+    udp: true
+
+  - name: V2rayDNS WS ID1
+    server: id1-ray.ipservers.xyz
+    port: 443
+    type: vmess
+    uuid: 7cb34538-835e-452d-a372-bf3310e1e439
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id1-ray.ipservers.xyz
+    network: ws
+    ws-opts:
+      path: /JAGOANSSH/
+      headers:
+        Host: id1-ray.ipservers.xyz
+    udp: true
+
+  - name: V2rayDNS WS ID2
+    server: id2-ray.ipservers.xyz
+    port: 443
+    type: vmess
+    uuid: 3a94f0eb-97b9-47f3-a4cd-1f32bf1323d9
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id2-ray.ipservers.xyz
+    network: ws
+    ws-opts:
+      path: /JAGOANSSH/
+      headers:
+        Host: id2-ray.ipservers.xyz
+    udp: true
+# Akun V2ray Vmess Websocket
