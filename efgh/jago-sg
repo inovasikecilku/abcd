@@ -73,35 +73,35 @@ proxies:
 
 # Akun Vless Websocket
 # Expired 05.02.2023
-  - name: Vless WS SG1
-    server: sg1vless.ipservers.xyz
-    port: 443
-    type: vless
-    uuid: fa8f7d88-5dd2-43e6-9319-05cb02cb28a9
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: www.google.com
-    network: ws
-    ws-opts:
-      path: /jagoanssh
-      headers:
-        Host: sg1vless.ipservers.xyz
-    udp: true
+- name: Vless WS SG1
+  server: sg1vless.ipservers.xyz
+  port: 443
+  type: vless
+  uuid: fa8f7d88-5dd2-43e6-9319-05cb02cb28a9
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: www.google.com
+  network: ws
+  ws-opts:
+    path: /jagoanssh
+    headers:
+      Host: sg1vless.ipservers.xyz
+  udp: true
 
-  - name: Vless WS SG2
-    server: sg2vless.ipservers.xyz
-    port: 443
-    type: vless
-    uuid: 8c830d12-1e70-4f1b-bf84-baadceed269b
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: www.google.com
-    network: ws
-    ws-opts:
-      path: /jagoanssh
-      headers:
-        Host: sg2vless.ipservers.xyz
-    udp: true
+- name: Vless WS SG2
+  server: sg2vless.ipservers.xyz
+  port: 443
+  type: vless
+  uuid: 8c830d12-1e70-4f1b-bf84-baadceed269b
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: www.google.com
+  network: ws
+  ws-opts:
+    path: /jagoanssh
+    headers:
+      Host: sg2vless.ipservers.xyz
+  udp: true
 # Akun Vless Websocket
