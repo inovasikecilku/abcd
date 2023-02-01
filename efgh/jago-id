@@ -170,7 +170,6 @@ proxies:
       path: /jagoanssh
       headers:
         Host: id1vless.ipservers.xyz
-    udp: true
 
   - name: Vless WS ID2
     server: id2vless.ipservers.xyz
@@ -186,7 +185,6 @@ proxies:
       path: /jagoanssh
       headers:
         Host: id2vless.ipservers.xyz
-    udp: true
 # Akun Vless Websocket
 
 # Akun Trojan Go Websocket, Expired 09.02.2023
