@@ -87,7 +87,6 @@ proxies:
     path: /jagoanssh
     headers:
       Host: sg1vless.ipservers.xyz
-  udp: true
 
 - name: Vless WS SG2
   server: sg2vless.ipservers.xyz
@@ -103,5 +102,4 @@ proxies:
     path: /jagoanssh
     headers:
       Host: sg2vless.ipservers.xyz
-  udp: true
 # Akun Vless Websocket
