@@ -61,70 +61,7 @@ proxy-providers:
       interval: 300
       url: http://www.gstatic.com/generate_204
 
-proxies:
-# akun hysteria
-- name: Hysteria
-  type: hysteria
-  server: 128.199.233.181
-  port: 443
-  auth_str: hysteria
-  obfs: hysteria
-  protocol: udp
-  up: "200 Mbps"
-  down: "1000 Mbps"
-  sni: www.google.com
-  skip-cert-verify: true
-  fast-open: true
-# akun snell
-- name: Snell
-  type: snell
-  server: 128.199.233.181
-  port: 443
-  psk: akrabcoid
-  version: 3
-  obfs-opts:
-    mode: tls
-    host: www.google.com
-  sni: www.google.com
-  udp: true
-
-- name: Shadowsocks
-  type: ss
-  server: idsocks.ipservers.xyz
-  port: 1443
-  cipher: aes-256-cfb
-  password: IIE8iB7R0J
-  plugin: obfs
-  plugin-opts:
-    mode: tls
-    host: idsocks.ipservers.xyz
-    
-- name: ShadowsocksR
-  type: ssr
-  server: idsocks.ipservers.xyz
-  port: 8388
-  cipher: aes-256-cfb
-  password: IIE8iB7R0J
-  protocol: auth_chain_a
-  obfs: tls1.2_ticket_auth
-  protocol-param: "#"
-  obfs-param: idsocks.ipservers.xyz
-  udp: true
-
 proxy-groups:
-- name: Umum
-  type: load-balance
-  strategy: consistent-hashing
-  disable-udp: false
-  url: http://www.gstatic.com/generate_204
-  interval: 300
-  tolerance: 150
-  proxies:
-  - Shadowsocks
-  - ShadowsocksR
-  - Hysteria
-  - Snell
-
 - name: Asia
   type: load-balance
   strategy: consistent-hashing
@@ -172,7 +109,6 @@ proxy-groups:
   interval: 300
   tolerance: 150
   proxies:
-  - Umum
   - Asia
   - Americas
   - Europe
@@ -186,7 +122,6 @@ proxy-groups:
   interval: 300
   tolerance: 150
   proxies:
-  - Umum
   - Asia
   - Americas
   - Europe
@@ -195,11 +130,6 @@ proxy-groups:
 - name: Selector
   type: select
   disable-udp: false
-  proxies:
-  - Shadowsocks
-  - ShadowsocksR
-  - Hysteria
-  - Snell
   use:
   - Asia
   - Americas
