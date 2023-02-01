@@ -238,31 +238,31 @@ rules:
   rule-providers:
   Hiburan:
     type: http
-    url: "https://bit.ly/3WTxyQM"
-    interval: 86400
     behavior: classical
-    path: "./hiburan.yaml"
+    url: "https://bit.ly/3WTxyQM"
+    path: ./hiburan.yaml
+    interval: 86400
   Olshop:
     type: http
-    url: "https://bit.ly/3Y8FMFI"
-    interval: 86400
     behavior: classical
-    path: "./olshop.yaml"
+    url: "https://bit.ly/3Y8FMFI"
+    path: ./olshop.yaml
+    interval: 86400
   Games:
     type: http
-    url: "https://bit.ly/3jhqEav"
-    interval: 86400
     behavior: classical
-    path: "./games.yaml"
+    url: "https://bit.ly/3jhqEav"
+    path: ./games.yaml
+    interval: 86400
   Blocked:
     type: http
-    url: "https://bit.ly/3Ywcph1"
-    interval: 86400
     behavior: classical
-    path: "./blocked.yaml"
+    url: "https://bit.ly/3Ywcph1"
+    path: ./blocked.yaml
+    interval: 86400
   Aplikasi:
     type: http
-    url: "https://bit.ly/3wJdSoj"
-    interval: 86400
     behavior: classical
-    path: "./aplikasi.yaml"
+    url: "https://bit.ly/3wJdSoj"
+    path: ./aplikasi.yaml
+    interval: 86400
