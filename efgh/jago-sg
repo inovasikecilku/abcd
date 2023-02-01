@@ -76,6 +76,7 @@ proxies:
   type: vless
   uuid: fa8f7d88-5dd2-43e6-9319-05cb02cb28a9
   cipher: auto
+  udp: true
   tls: true
   skip-cert-verify: true
   servername: www.google.com
@@ -91,6 +92,7 @@ proxies:
   type: vless
   uuid: 8c830d12-1e70-4f1b-bf84-baadceed269b
   cipher: auto
+  udp: true
   tls: true
   skip-cert-verify: true
   servername: www.google.com
@@ -102,17 +104,17 @@ proxies:
 # Akun Vless Websocket
 
 # Akun Trojan Go Websocket, Expired 09.02.2023
-  - name: sg2go.ipservers.xyz
-    server: sg2go.ipservers.xyz
-    port: 443
-    type: trojan
-    password: jagoanssh-gosg202022023
-    skip-cert-verify: true
-    sni: sg2go.ipservers.xyz
-    network: ws
-    ws-opts:
-      path: /trojan
-      headers:
-        Host: sg2go.ipservers.xyz
-    udp: true
+- name: sg2go.ipservers.xyz
+  server: sg2go.ipservers.xyz
+  port: 443
+  type: trojan
+  password: jagoanssh-gosg202022023
+  skip-cert-verify: true
+  sni: sg2go.ipservers.xyz
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: sg2go.ipservers.xyz
+  udp: true
 # Akun Trojan Go Websocket
