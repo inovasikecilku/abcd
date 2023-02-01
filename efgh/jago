@@ -1,0 +1,6 @@
+Expired 05.02.2023
+  - {name: Shadowaocks-SG1, server: sg1socks.ipservers.xyz, port: 1443, type: ss, cipher: aes-256-cfb, password: aaUwOzj48U, udp: true}
+  - {name: ShadowsocksR-SG1, server: sg1socks.ipservers.xyz, port: 8388, type: ssr, cipher: aes-256-cfb, password: aaUwOzj48U, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+Expired 05.02.2023
+  - {name: Shadowsocks-SG2, server: sg2socks.ipservers.xyz, port: 1443, type: ss, cipher: aes-256-cfb, password: OjXiQIeUIJ, udp: true}
+  - {name: ShadowsocksR-SG2, server: sg2socks.ipservers.xyz, port: 8388, type: ssr, cipher: aes-256-cfb, password: OjXiQIeUIJ, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
