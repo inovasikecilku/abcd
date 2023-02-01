@@ -104,36 +104,4 @@ proxies:
       headers:
         Host: sg2vless.ipservers.xyz
     udp: true
-
-  - name: Vless WS ID1
-    server: id1vless.ipservers.xyz
-    port: 443
-    type: vless
-    uuid: 767818a4-e58d-4f3f-91cd-b4a2de5f3f85
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: www.google.com
-    network: ws
-    ws-opts:
-      path: /jagoanssh
-      headers:
-        Host: id1vless.ipservers.xyz
-    udp: true
-
-  - name: Vless WS ID2
-    server: id2vless.ipservers.xyz
-    port: 443
-    type: vless
-    uuid: 7cbc5adf-4bba-47fd-8cf4-5ce9c7435235
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: www.google.com
-    network: ws
-    ws-opts:
-      path: /jagoanssh
-      headers:
-        Host: id2vless.ipservers.xyz
-    udp: true
 # Akun Vless Websocket
