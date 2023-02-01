@@ -1,6 +1,20 @@
 payload:
-  # FreeFire
+# Games
+  - PROCESS-NAME,com.mobile.legends
   - PROCESS-NAME,com.dts.freefireth
+  - PROCESS-NAME,com.dts.freefiremax
+  - PROCESS-NAME,com.tencent.ig
+  - PROCESS-NAME,com.pubg.newstate
+  - PROCESS-NAME,com.ngame.allstar.eu
+  - PROCESS-NAME,com.netease.g78na.gb
+  - PROCESS-NAME,com.superevilmegacorp.game
+  - PROCESS-NAME,com.ea.game.pvz2_row
+  - PROCESS-NAME,com.riotgames.league.wildrift
+  - PROCESS-NAME,com.activision.callofduty.shooter
+  - PROCESS-NAME,com.ea.gp.apexlegendsmobilefps
+  - PROCESS-NAME,com.supercell.clashofclans
+  - PROCESS-NAME,com.supercell.clashroyale
+  # FreeFire
   - DOMAIN-KEYWORD,freefire
   - DOMAIN-SUFFIX,garena.com
   - DOMAIN-SUFFIX,avatargarenanow-a.akamaihd.net
@@ -18,7 +32,6 @@ payload:
   - DOMAIN-SUFFIX,garenanow.com
   - DOMAIN-SUFFIX,seagroup.com
  #MOBILE LEGENDS
-  - PROCESS-NAME,com.mobile.legends
   - DOMAIN-SUFFIX,youngjoygame.com
   - DOMAIN-SUFFIX,mobilelegends.com
   - DOMAIN-SUFFIX,app.adjust.net.in
@@ -619,8 +632,6 @@ payload:
   - DST-PORT,30299
   - DST-PORT,30300
   # PUBG
-  - PROCESS-NAME,com.tencent.ig
-  - PROCESS-NAME,com.pubg.newstate
   - DOMAIN-SUFFIX,pubgmobile.com  
   - DOMAIN-SUFFIX,igamecj.com
   - DOMAIN,file-igamecj.akamaized.net
@@ -1880,7 +1891,6 @@ payload:
   - IP-CIDR,223.166.0.0/16
   - IP-CIDR,223.167.0.0/16
   ## >> Plants VS Zombies
-  - PROCESS-NAME,com.ea.game.pvz2_row
   - DOMAIN-SUFFIX,plantsvszombies2.com
   - DOMAIN-SUFFIX,pvzgw2.com
   - DOMAIN-SUFFIX,pvzheroes.com
@@ -1907,7 +1917,6 @@ payload:
   - DOMAIN-SUFFIX,supremacy.com
   - DOMAIN-SUFFIX,supremacy.net
   ## >> League of Lengends
-  - PROCESS-NAME,com.riotgames.league.wildrift
   - DOMAIN-SUFFIX,championshipseriesleague.com
   - DOMAIN-SUFFIX,lcsmerch.com
   - DOMAIN-SUFFIX,leaguehighschool.com
