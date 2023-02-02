@@ -180,7 +180,7 @@ proxy-groups:
   - Indonesia
   - Acak
 
-- name: Semua
+- name: All
   type: select
   disable-udp: false
   proxies:
@@ -188,7 +188,17 @@ proxy-groups:
   - Loadbalance
   - Selector
 
-- name: Pilih
+- name: Ads
+  type: select
+  disable-udp: false
+  proxies:
+  - REJECT
+  - DIRECT
+  - Fallback
+  - Loadbalance
+  - Selector
+
+- name: Choice
   type: select
   disable-udp: false
   proxies:
@@ -200,14 +210,14 @@ proxy-groups:
   
 rules:
   - GEOIP,id,Indonesia
-  - GEOSITE,category-ads-all,Pilih
-  - GEOSITE,category-porn,Pilih
+  - GEOSITE,category-ads-all,Ads
+  - GEOSITE,category-porn,Choice
   - RULE-SET,Hiburan,Indonesia
   - RULE-SET,Olshop,Indonesia
   - RULE-SET,Games,DIRECT
-  - RULE-SET,Blocked,Pilih
+  - RULE-SET,Blocked,Choice
   - RULE-SET,Aplikasi,Indonesia
-  - MATCH,Semua
+  - MATCH,All
   
 rule-providers:
   Hiburan:
