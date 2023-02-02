@@ -1,0 +1,27 @@
+[General]
+skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
+dns-server = 1.1.1.1, 1.0.0.1
+always-real-ip = stun.l.google.com
+doh-server = https://dns.cloudflare.com/dns-query
+
+[Proxy]
+HTTP = http, server.com, 80, username, password
+HTTPS = https, server.com, 443, username, password, skip-cert-verify=true, sni=www.google.com
+SOCKS5 = socks5, server.com, 80, username, password, udp-relay=false
+SOCKS5TLS = socks5-tls, server.com, 443, username, password, skip-cert-verify=true, sni=www.google.com
+ShadowsocksTLS = ss, server.com, 443, encrypt-method=aes-256-cfb, password=abcd1234, udp-relay=false, obfs=tls, obfs-host=www.google.com
+ShadowsocksNonTLS = ss, server.com, 80, encrypt-method=chacha20-ietf-poly1305, password=abcd1234, udp-relay=false, obfs=http, obfs-host=www.google.com
+VmessTLS = vmess, server.com, 443, username=abcd1234, ws=true, tls=true, ws-path=/vmess, skip-cert-verify=true, udp-relay=false, vmess-aead=true, ws-headers=Host:server.com, sni=www.google.com
+VmessNonTLS = vmess, server.com, 80, username=abcd1234, ws=true, tls=false, ws-path=/vmess, skip-cert-verify=false, udp-relay=false, vmess-aead=true, ws-headers=Host:www.google.com
+Trojan = trojan, server.com, 443, password=abcd1234, ws=false, ws-path=/path, skip-cert-verify=true, udp-relay=false, sni=www.google.com
+TrojanWS = trojan, server.com, 443, password=abcd1234, ws=true, ws-path=/path, skip-cert-verify=true, udp-relay=false, ws-headers=Host:server.com, sni=www.google.com
+
+[Proxy Group]
+Umum = url-test, HTTP, HTTPS, SOCKS5, SOCKS5TLS, VmessTLS, VmessNonTLS, Trojan, TrojanWS
+Sosmed = url-test, HTTP, HTTPS, SOCKS5, SOCKS5TLS, VmessTLS, VmessNonTLS, Trojan, TrojanWS
+
+[Rule]
+RULE-SET,https://bit.ly/3CWRBH0,DIRECT
+RULE-SET,https://bit.ly/3XAKeNl,REJECT
+RULE-SET,https://bit.ly/3ZGv22Z,Sosmed
+FINAL,Umum
