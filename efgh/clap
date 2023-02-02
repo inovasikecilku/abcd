@@ -210,7 +210,6 @@ proxy-groups:
   
 rules:
   - GEOIP,id,Indonesia
-  - GEOSITE,category-porn,Choice
   - RULE-SET,Adaway,Choice
   - RULE-SET,Hiburan,Indonesia
   - RULE-SET,Olshop,Indonesia
