@@ -1,0 +1,258 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: silent
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  listen: 127.0.0.1:7874
+  fake-ip-filter:
+  - "+.*"
+  default-nameserver:
+    - 9.9.9.9
+    - 149.112.112.112
+  nameserver:
+    - 1.1.1.1
+    - 1.0.0.1
+    - https://dns.cloudflare.com/dns-query
+    - tls://1dot1dot1dot1.cloudflare-dns.com
+    - https://dns.quad9.net/dns-query
+    - tls://dns.quad9.net
+
+proxy-providers:
+  Asia:
+    type: http
+    url: "https://fool.azurewebsites.net/get?vpn=vmess&format=clash&region=Asia&sni=www.google.com"
+    interval: 86400
+    path: ./asia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  Americas:
+    type: http
+    url: "https://fool.azurewebsites.net/get?vpn=vmess&format=clash&region=Americas&sni=www.google.com"
+    interval: 86400
+    path: ./americas.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  Europe:
+    type: http
+    url: "https://fool.azurewebsites.net/get?vpn=vmess&format=clash&region=Europe&sni=www.google.com"
+    interval: 86400
+    path: ./europe.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  Singapura:
+    type: http
+    url: "http://bit.ly/3Rq1Qtj"
+    interval: 86400
+    path: ./singapura.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  Indonesia:
+    type: http
+    url: "http://bit.ly/3Hptfab"
+    interval: 86400
+    path: ./indonesia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  Acak:
+    type: http
+    url: "https://bit.ly/3DvC3dk"
+    interval: 86400
+    path: ./acak.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+
+proxy-groups:
+- name: Asia
+  type: load-balance
+  strategy: consistent-hashing
+  disable-udp: false
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 150
+  use:
+  - Asia
+
+- name: Americas
+  type: load-balance
+  strategy: consistent-hashing
+  disable-udp: false
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 150
+  use:
+  - Americas
+
+- name: Europe
+  type: load-balance
+  strategy: consistent-hashing
+  disable-udp: false
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 150
+  use:
+  - Europe
+
+- name: Singapura
+  type: load-balance
+  strategy: consistent-hashing
+  disable-udp: false
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 150
+  use:
+  - Singapura
+
+- name: Indonesia
+  type: load-balance
+  strategy: consistent-hashing
+  disable-udp: false
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 150
+  use:
+  - Indonesia
+  
+- name: Acak
+  type: load-balance
+  strategy: consistent-hashing
+  disable-udp: false
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 150
+  use:
+  - Acak
+  
+- name: Fallback
+  type: fallback
+  disable-udp: false
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 150
+  proxies:
+  - Asia
+  - Americas
+  - Europe
+  - Singapura
+  - Indonesia
+  - Acak
+
+- name: Loadbalance
+  type: load-balance
+  strategy: consistent-hashing
+  disable-udp: false
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 150
+  proxies:
+  - Asia
+  - Americas
+  - Europe
+  - Singapura
+  - Indonesia
+  - Acak
+
+- name: Selector
+  type: select
+  disable-udp: false
+  use:
+  - Asia
+  - Americas
+  - Europe
+  - Singapura
+  - Indonesia
+  - Acak
+
+- name: All
+  type: select
+  disable-udp: false
+  proxies:
+  - Fallback
+  - Loadbalance
+  - Selector
+
+- name: Ads
+  type: select
+  disable-udp: false
+  proxies:
+  - REJECT
+  - DIRECT
+  - Fallback
+  - Loadbalance
+  - Selector
+
+- name: Choice
+  type: select
+  disable-udp: false
+  proxies:
+  - REJECT
+  - DIRECT
+  - Fallback
+  - Loadbalance
+  - Selector
+  
+rules:
+  - GEOIP,id,Indonesia
+  - GEOSITE,category-porn,Choice
+  - RULE-SET,Adaway,Choice
+  - RULE-SET,Hiburan,Indonesia
+  - RULE-SET,Olshop,Indonesia
+  - RULE-SET,Games,DIRECT
+  - RULE-SET,Blocked,Choice
+  - RULE-SET,Aplikasi,Indonesia
+  - MATCH,All
+  
+rule-providers:
+  Hiburan:
+    type: http
+    behavior: classical
+    url: "https://bit.ly/3WTxyQM"
+    path: ./hiburan.yaml
+    interval: 86400
+  Olshop:
+    type: http
+    behavior: classical
+    url: "https://bit.ly/3Y8FMFI"
+    path: ./olshop.yaml
+    interval: 86400
+  Games:
+    type: http
+    behavior: classical
+    url: "https://bit.ly/3jhqEav"
+    path: ./games.yaml
+    interval: 86400
+  Blocked:
+    type: http
+    behavior: classical
+    url: "https://bit.ly/3Ywcph1"
+    path: ./blocked.yaml
+    interval: 86400
+  Aplikasi:
+    type: http
+    behavior: classical
+    url: "https://bit.ly/3wJdSoj"
+    path: ./aplikasi.yaml
+    interval: 86400
+  Adaway:
+    type: http
+    behavior: classical
+    url: "https://bit.ly/3HWC5Op"
+    path: ./aplikasi.yaml
+    interval: 86400
