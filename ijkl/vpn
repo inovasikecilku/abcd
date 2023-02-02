@@ -1,0 +1,69 @@
+proxies:
+- name: Trojan
+  type: trojan
+  server: SERVER.COM
+  port: 443
+  password: PASSWORD
+  udp: true
+  sni: DOMAIN.COM
+  skip-cert-verify: true
+
+- name: Trojan WS
+  server: SERVER.COM
+  port: 443
+  type: trojan
+  password: PASSWORD
+  skip-cert-verify: true
+  sni: DOMAIN.COM
+  network: ws
+  ws-opts:
+    path: /PATH
+    headers:
+      Host: SERVER.COM
+  udp: true
+
+- name: Trojan gRPC
+  type: trojan
+  server: SERVER.COM
+  port: 443
+  password: PASSWORD
+  udp: true
+  sni: DOMAIN.COM
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: NAMAGRPC
+
+- name: Vmess WS TLS
+  type: vmess
+  server: SERVER.COM
+  port: 443
+  uuid: UUID
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: DOMAIN.COM
+  network: ws
+  ws-opts:
+    path: /PATH
+    headers:
+      Host: SERVER.COM
+
+- name: Vmess WS Non TLS
+  type: vmess
+  server: SERVER.COM
+  port: 80
+  uuid: UUID
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  servername: DOMAIN.COM
+  network: ws
+  ws-opts:
+    path: /PATH
+    headers:
+      Host: SERVER.COM
