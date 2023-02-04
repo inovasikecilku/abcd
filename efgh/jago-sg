@@ -1,4 +1,5 @@
 proxies:
+#============ core premium ===========#
 # Akun Shadowsocks dan ShadowsocksR, Expired 05.02.2023
 - name: Shadowsocks SG1
   type: ss
@@ -48,7 +49,25 @@ proxies:
   obfs-param: sg1socks.ipservers.xyz
   udp: true
 # Akun Shadowsocks dan ShadowsocksR
- 
+
+# Akun Trojan Go Websocket, Expired 09.02.2023
+- name: Trojan Go SG2
+  server: sg2go.ipservers.xyz
+  port: 443
+  type: trojan
+  password: jagoanssh-gosg202022023
+  skip-cert-verify: true
+  sni: sg2go.ipservers.xyz
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: sg2go.ipservers.xyz
+  udp: true
+# Akun Trojan Go Websocket
+#============ core premium ===========#
+
+#============ core meta ===========#
 # Akun Wireguard, Expired 07.02.2023
 - name: Wireguard SG2
   type: wireguard
@@ -102,19 +121,4 @@ proxies:
     headers:
       Host: sg2vless.ipservers.xyz
 # Akun Vless Websocket
-
-# Akun Trojan Go Websocket, Expired 09.02.2023
-- name: Trojan Go SG2
-  server: sg2go.ipservers.xyz
-  port: 443
-  type: trojan
-  password: jagoanssh-gosg202022023
-  skip-cert-verify: true
-  sni: sg2go.ipservers.xyz
-  network: ws
-  ws-opts:
-    path: /trojan
-    headers:
-      Host: sg2go.ipservers.xyz
-  udp: true
-# Akun Trojan Go Websocket
+#============ core meta ===========#
