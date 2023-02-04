@@ -253,5 +253,5 @@ rule-providers:
     type: http
     behavior: classical
     url: "https://bit.ly/3HWC5Op"
-    path: ./aplikasi.yaml
+    path: ./away.yaml
     interval: 86400
