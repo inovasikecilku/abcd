@@ -1,20 +1,7 @@
-#Dynamic SG Vultr, Expired 09.02.2023
 proxies:
+#============ core premium ===========#
+#Dynamic SG Vultr, Expired 09.02.2023
 - {name: Dynamic SG Vultr, server: dynamic-sg1b.obfs.xyz, port: 443, type: vmess, uuid: 2c6e4b3e-8aa6-45d2-b6f6-aac777b393aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: www.google.com, network: ws, ws-opts: {path: /worryfree, headers: {Host: www.google.com}}, udp: true}
-
-# Akun Hysteria
-- name: Hysteria
-  type: hysteria
-  server: 128.199.233.181
-  port: 443
-  auth_str: hysteria
-  obfs: hysteria
-  protocol: udp
-  up: "200 Mbps"
-  down: "1000 Mbps"
-  sni: www.google.com
-  skip-cert-verify: true
-  fast-open: true
 
 # Akun Snell
 - name: Snell
@@ -28,3 +15,20 @@ proxies:
     host: www.google.com
   sni: www.google.com
   udp: true
+#============ core premium ===========#
+
+#============ core meta ===========#
+# Akun Hysteria
+- name: Hysteria
+  type: hysteria
+  server: 128.199.233.181
+  port: 443
+  auth_str: hysteria
+  obfs: hysteria
+  protocol: udp
+  up: "200 Mbps"
+  down: "1000 Mbps"
+  sni: www.google.com
+  skip-cert-verify: true
+  fast-open: true
+#============ core meta ===========#
