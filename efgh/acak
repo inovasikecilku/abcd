@@ -5,35 +5,5 @@ vmess://ew0KICAiYWRkIjogImlkLTEuMHJkLm5ldCIsDQogICJhaWQiOiAiMCIsDQogICJob3N0Ijog
 vmess://ew0KICAiYWRkIjogImlkLTEuMHJkLm5ldCIsDQogICJhaWQiOiAiMCIsDQogICJob3N0IjogIiIsDQogICJpZCI6ICIwZTgyNmI0MC1hOTE1LTExZWQtYjAzMC0yMDVjNmQ1ZjVkNzgiLA0KICAibmV0IjogIndzIiwNCiAgInBhdGgiOiAiL3ozNDE1ZHd5IiwNCiAgInBvcnQiOiAiODAiLA0KICAicHMiOiAiSGVyemEgTlRMUyIsDQogICJ0bHMiOiAibm9uZSIsDQogICJzbmkiOiAiIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJ2IjogIjIiDQp9
 vmess://ew0KICAiYWRkIjogInNnLTEuMHJkLm5ldCIsDQogICJhaWQiOiAiMCIsDQogICJob3N0IjogIiIsDQogICJpZCI6ICJhMjIwMzYyMC1hOTE1LTExZWQtYjAzNy0yMDVjNmQ1ZjVkNzgiLA0KICAibmV0IjogIndzIiwNCiAgInBhdGgiOiAiL2ptOHJhbjl2IiwNCiAgInBvcnQiOiAiNDQzIiwNCiAgInBzIjogIkhFLTEgVExTIiwNCiAgInRscyI6ICJ0bHMiLA0KICAic25pIjogIiIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAidiI6ICIyIg0KfQ==
 vmess://ew0KICAiYWRkIjogInNnLTEuMHJkLm5ldCIsDQogICJhaWQiOiAiMCIsDQogICJob3N0IjogIiIsDQogICJpZCI6ICJhMjIwMzYyMC1hOTE1LTExZWQtYjAzNy0yMDVjNmQ1ZjVkNzgiLA0KICAibmV0IjogIndzIiwNCiAgInBhdGgiOiAiL2ptOHJhbjl2IiwNCiAgInBvcnQiOiAiODAiLA0KICAicHMiOiAiSEUtMSBOVExTIiwNCiAgInRscyI6ICJub25lIiwNCiAgInNuaSI6ICIiLA0KICAidHlwZSI6ICJub25lIiwNCiAgInYiOiAiMiINCn0=
-vmess://eyJhZGQiOiJpZC0yLjByZC5uZXQiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiNjE1M2VjOTAtYTkxNi0xMWVkLWIzMzAtMjA1YzZkNWY1ZDc4IiwibmV0Ijoid3MiLCJwYXRoIjoiL3d2NWNtdTh0IiwicG9ydCI6IjQ0MyIsInBzIjoiSUtEIFRMUyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiIiwidiI6IjIifQ==
-vmess://eyJhZGQiOiJpZC0yLjByZC5uZXQiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6ImlkLTIuMHJkLm5ldCIsImlkIjoiNjE1M2VjOTAtYTkxNi0xMWVkLWIzMzAtMjA1YzZkNWY1ZDc4IiwibmV0Ijoid3MiLCJwYXRoIjoiL3d2NWNtdTh0IiwicG9ydCI6IjgwIiwicHMiOiJJS0QgTlRMUyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6IjIifQ==
-
-# Akun Snell
-- name: Snell
-  type: snell
-  server: 128.199.233.181
-  port: 443
-  psk: akrabcoid
-  version: 3
-  obfs-opts:
-    mode: tls
-    host: www.google.com
-  sni: www.google.com
-  udp: true
-#============ core premium ===========#
-
-#============ core meta ===========#
-# Akun Hysteria
-- name: Hysteria
-  type: hysteria
-  server: 128.199.233.181
-  port: 443
-  auth_str: hysteria
-  obfs: hysteria
-  protocol: udp
-  up: "200 Mbps"
-  down: "1000 Mbps"
-  sni: www.google.com
-  skip-cert-verify: true
-  fast-open: true
-#============ core meta ===========#
+vmess://eyJhZGQiOiJpZC0yLjByZC5uZXQiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImhvc3QiOiJpZC0yLjByZC5uZXQiLCJpZCI6IjYxNTNlYzkwLWE5MTYtMTFlZC1iMzMwLTIwNWM2ZDVmNWQ3OCIsIm5ldCI6IndzIiwicGF0aCI6Ii93djVjbXU4dCIsInBvcnQiOiI0NDMiLCJwcyI6IklLRCBUTFMiLCJzY3kiOiJhdXRvIiwic25pIjoiaWQtMi4wcmQubmV0IiwidGxzIjoidGxzIiwidHlwZSI6IiIsInYiOiIyIn0=
+vmess://eyJhZGQiOiJpZC0yLjByZC5uZXQiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImhvc3QiOiJpZC0yLjByZC5uZXQiLCJpZCI6IjYxNTNlYzkwLWE5MTYtMTFlZC1iMzMwLTIwNWM2ZDVmNWQ3OCIsIm5ldCI6IndzIiwicGF0aCI6Ii93djVjbXU4dCIsInBvcnQiOiI4MCIsInBzIjoiSUtEIE5UTFMiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOiIyIn0=
