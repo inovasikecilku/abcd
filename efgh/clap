@@ -23,6 +23,102 @@ dns:
     - https://dns.quad9.net/dns-query
     - tls://dns.quad9.net
 
+proxy-providers:
+  Singapura:
+    type: http
+    url: "https://github.com/inovasikecilku/abcd/raw/main/efgh/jago-sg"
+    interval: 86400
+    path: ./singapura.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  Indonesia:
+    type: http
+    url: "https://github.com/inovasikecilku/abcd/raw/main/efgh/jago-id"
+    interval: 86400
+    path: ./indonesia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  Acak:
+    type: http
+    url: "https://github.com/inovasikecilku/abcd/raw/main/efgh/acak"
+    interval: 86400
+    path: ./acak.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+
+proxy-groups:
+- name: Singapura
+  type: load-balance
+  strategy: consistent-hashing
+  disable-udp: false
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 150
+  use:
+  - Singapura
+
+- name: Indonesia
+  type: load-balance
+  strategy: consistent-hashing
+  disable-udp: false
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 150
+  use:
+  - Indonesia
+  
+- name: Acak
+  type: load-balance
+  strategy: consistent-hashing
+  disable-udp: false
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 150
+  use:
+  - Acak
+  
+- name: Fallback
+  type: fallback
+  disable-udp: false
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 150
+  proxies:
+  - Singapura
+  - Indonesia
+  - Acak
+
+- name: Loadbalance
+  type: load-balance
+  strategy: consistent-hashing
+  disable-udp: false
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 150
+  proxies:
+  - Singapura
+  - Indonesia
+  - Acak
+
+- name: Selector
+  type: select
+  disable-udp: false
+  use:
+  - Singapura
+  - Indonesia
+  - Acak
+
+- name: All
+  type: select
+  disable-udp: false
+  proxies:
+  - Fallback
   - Loadbalance
   - Selector
 
