@@ -50,29 +50,29 @@ proxies:
   udp: true
 # Akun Shadowsocks dan ShadowsocksR
 
-# Akun Vmess Websocket, Expired 06.02.2023
+# Akun Vmess Websocket, Expired 17.02.2023
 - name: Vmess WS ID1 TlS
   server: id1-ray.ipservers.xyz
   port: 443
   type: vmess
-  uuid: 412c78a1-a63d-4be0-a014-6c466dcb2ca5
+  uuid: 562ec392-c2de-41ad-a2ce-e17b717c9482
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: www.google.com
+  servername: id1-ray.ipservers.xyz
   network: ws
   ws-opts:
     path: /JAGOANSSH/
     headers:
-      Host: www.google.com
+      Host: id1-ray.ipservers.xyz
   udp: true
 
 - name: Vmess WS ID1 NTLS
   server: id1-ray.ipservers.xyz
   port: 80
   type: vmess
-  uuid: 412c78a1-a63d-4be0-a014-6c466dcb2ca5
+  uuid: 562ec392-c2de-41ad-a2ce-e17b717c9482
   alterId: 0
   cipher: auto
   tls: false
@@ -89,24 +89,24 @@ proxies:
   server: id2-ray.ipservers.xyz
   port: 443
   type: vmess
-  uuid: 2c1ff0dc-583b-40b3-8367-4626b792fbcc
+  uuid: 04a37668-c863-47de-aaac-ca98635ff087
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: www.google.com
+  servername: id2-ray.ipservers.xyz
   network: ws
   ws-opts:
     path: /JAGOANSSH/
     headers:
-      Host: www.google.com
+      Host: id2-ray.ipservers.xyz
   udp: true
 
 - name: Vmess WS ID2 NTLS
   server: id2-ray.ipservers.xyz
   port: 80
   type: vmess
-  uuid: 2c1ff0dc-583b-40b3-8367-4626b792fbcc
+  uuid: 04a37668-c863-47de-aaac-ca98635ff087
   alterId: 0
   cipher: auto
   tls: false
@@ -120,12 +120,12 @@ proxies:
   udp: true
 # Akun Vmess Websocket
 
-# Akun V2ray DNS Websocket, Expired 06.02.2023
+# Akun V2ray DNS Websocket, Expired 17.02.2023
 - name: V2rayDNS WS ID1
   server: id1-ray.ipservers.xyz
   port: 443
   type: vmess
-  uuid: 7cb34538-835e-452d-a372-bf3310e1e439
+  uuid: 69016ac4-9a7e-4478-8634-2a9fc258376b
   alterId: 0
   cipher: auto
   tls: true
@@ -142,7 +142,7 @@ proxies:
   server: id2-ray.ipservers.xyz
   port: 443
   type: vmess
-  uuid: 3a94f0eb-97b9-47f3-a4cd-1f32bf1323d9
+  uuid: 76c481e7-791a-4b12-bb5c-b22b94cffe53
   alterId: 0
   cipher: auto
   tls: true
