@@ -157,20 +157,20 @@ rule-providers:
   Hiburan:
     type: http
     behavior: classical
-    url: "https://github.com/inovasikecilku/abcd/raw/main/efgh/hiburan"
     path: ./hiburan.yaml
+    url: "https://github.com/inovasikecilku/abcd/raw/main/efgh/hiburan"
     interval: 86400
   Olshop:
     type: http
     behavior: classical
-    url: "https://github.com/inovasikecilku/abcd/raw/main/efgh/olshop"
     path: ./olshop.yaml
+    url: "https://github.com/inovasikecilku/abcd/raw/main/efgh/olshop"
     interval: 86400
   Games:
     type: http
     behavior: classical
-    url: "https://github.com/inovasikecilku/abcd/raw/main/efgh/games"
     path: ./games.yaml
+    url: "https://github.com/inovasikecilku/abcd/raw/main/efgh/games"
     interval: 86400
   Blocked:
     type: http
@@ -181,6 +181,6 @@ rule-providers:
   Aplikasi:
     type: http
     behavior: classical
-    url: "https://github.com/inovasikecilku/abcd/raw/main/efgh/aplikasi"
     path: ./aplikasi.yaml
+    url: "https://github.com/inovasikecilku/abcd/raw/main/efgh/aplikasi"
     interval: 86400
