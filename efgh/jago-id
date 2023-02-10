@@ -25,7 +25,7 @@ proxies:
   obfs-param: idsocks.ipservers.xyz
   udp: true
 
-- name: Shadowsocks SG2
+- name: Shadowsocks ID2
   type: ss
   server: id2socks.ipservers.xyz
   port: 1443
@@ -37,7 +37,7 @@ proxies:
     host: id2socks.ipservers.xyz
   udp: true
 
-- name: ShadowsocksR SG2
+- name: ShadowsocksR ID2
   server: id2socks.ipservers.xyz
   port: 8388
   type: ssr
