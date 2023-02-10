@@ -26,7 +26,7 @@ dns:
 proxy-providers:
   Singapura:
     type: http
-    url: "http://bit.ly/3Rq1Qtj"
+    url: "http://bit.ly/3Id7GLy"
     interval: 86400
     path: ./singapura.yaml
     health-check:
@@ -35,7 +35,7 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
   Indonesia:
     type: http
-    url: "http://bit.ly/3Hptfab"
+    url: "http://bit.ly/3RQfNAR"
     interval: 86400
     path: ./indonesia.yaml
     health-check:
@@ -44,7 +44,7 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
   Acak:
     type: http
-    url: "https://bit.ly/3DvC3dk"
+    url: "https://bit.ly/3x8RDs2"
     interval: 86400
     path: ./acak.yaml
     health-check:
