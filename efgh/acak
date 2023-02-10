@@ -1,5 +1,4 @@
 proxies:
-#============ Core Premium ============#
 #Akun FastSSH, Expired 17.02.2023
 - {name: Herza TLS, server: id-1.0rd.net, port: 443, type: vmess, uuid: 0e826b40-a915-11ed-b030-205c6d5f5d78, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: "", network: ws, ws-opts: {path: /z3415dwy, headers: {Host: ""}}, udp: true}
 - {name: Herza NTLS, server: id-1.0rd.net, port: 80, type: vmess, uuid: 0e826b40-a915-11ed-b030-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: "", network: ws, ws-opts: {path: /z3415dwy, headers: {Host: ""}}, udp: true}
