@@ -3265,7 +3265,7 @@ rules:
   - DOMAIN-SUFFIX,visionplus.id,Indonesia
   - DOMAIN-SUFFIX,dtaarjaj1diy9.cloudfront.net,Indonesia
   - DOMAIN-SUFFIX,mrpw.ptmnc01.verspective.net,Indonesia
-  - DOMAIN-SUFFIX,rmp-data.com
+  - DOMAIN-SUFFIX,rmp-data.com,Indonesia
   - DOMAIN,stream-cdn.mncnow.id,Indonesia
   - DOMAIN-KEYWORD,visionplus,Indonesia
 
