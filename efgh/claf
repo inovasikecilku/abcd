@@ -26,7 +26,7 @@ dns:
 proxy-providers:
   Singapura:
     type: http
-    url: "http://bit.ly/3Id7GLy"
+    url: "https://github.com/inovasikecilku/abcd/raw/main/efgh/jago-sg"
     interval: 86400
     path: ./singapura.yaml
     health-check:
@@ -35,7 +35,7 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
   Indonesia:
     type: http
-    url: "http://bit.ly/3RQfNAR"
+    url: "https://github.com/inovasikecilku/abcd/raw/main/efgh/jago-id"
     interval: 86400
     path: ./indonesia.yaml
     health-check:
@@ -44,7 +44,7 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
   Acak:
     type: http
-    url: "https://bit.ly/3x8RDs2"
+    url: "https://github.com/inovasikecilku/abcd/raw/main/efgh/acak"
     interval: 86400
     path: ./acak.yaml
     health-check:
