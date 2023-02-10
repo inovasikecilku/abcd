@@ -156,36 +156,36 @@ rule-providers:
   Hiburan:
     type: http
     behavior: classical
-    url: "https://bit.ly/3WTxyQM"
+    url: "https://bit.ly/3RNJ5A9"
     path: ./hiburan.yaml
     interval: 86400
   Olshop:
     type: http
     behavior: classical
-    url: "https://bit.ly/3Y8FMFI"
+    url: "https://bit.ly/3JZ0uUK"
     path: ./olshop.yaml
     interval: 86400
   Games:
     type: http
     behavior: classical
-    url: "https://bit.ly/3jhqEav"
+    url: "https://bit.ly/3DYJtpT"
     path: ./games.yaml
     interval: 86400
   Blocked:
     type: http
     behavior: classical
-    url: "https://bit.ly/3Ywcph1"
+    url: "https://bit.ly/3Xfb5Ok"
     path: ./blocked.yaml
     interval: 86400
   Aplikasi:
     type: http
     behavior: classical
-    url: "https://bit.ly/3wJdSoj"
+    url: "https://bit.ly/3YCMh3L"
     path: ./aplikasi.yaml
     interval: 86400
   Adaway:
     type: http
     behavior: classical
-    url: "https://bit.ly/3HWC5Op"
+    url: "https://bit.ly/3HoiEfM"
     path: ./away.yaml
     interval: 86400
