@@ -50,6 +50,42 @@ proxies:
   udp: true
 # Akun Shadowsocks dan ShadowsocksR
 
+# Akun V2ray DNS Websocket, Expired 18.02.2023
+- name: V2rayDNS WS SG1
+  server: sg-ray.ipservers.xyz
+  port: 443
+  type: vmess
+  uuid: 096a80b2-ab33-4289-8956-c0a838ea2033
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: sg-ray.ipservers.xyz
+  network: ws
+  ws-opts:
+    path: /JAGOANSSH/
+    headers:
+      Host: sg-ray.ipservers.xyz
+  udp: true
+
+- name: V2rayDNS WS SG2
+  server: sg2-ray.ipservers.xyz
+  port: 443
+  type: vmess
+  uuid: 1f15b46c-c3be-4c69-b9dd-55978f189502
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: sg2-ray.ipservers.xyz
+  network: ws
+  ws-opts:
+    path: /JAGOANSSH/
+    headers:
+      Host: sg2-ray.ipservers.xyz
+  udp: true
+# Akun V2ray DNS Websocket
+
 # Akun Trojan Go Websocket, Expired 09.02.2023
 - name: Trojan Go SG2
   server: sg2go.ipservers.xyz
