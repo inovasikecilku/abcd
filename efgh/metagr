@@ -26,7 +26,7 @@ dns:
 proxy-providers:
   Singapura:
     type: http
-    url: "http://bit.ly/3Id7GLy"
+    url: "https://github.com/inovasikecilku/abcd/raw/main/efgh/jago-sg"
     interval: 86400
     path: ./singapura.yaml
     health-check:
@@ -35,7 +35,7 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
   Indonesia:
     type: http
-    url: "http://bit.ly/3RQfNAR"
+    url: "https://github.com/inovasikecilku/abcd/raw/main/efgh/jago-id"
     interval: 86400
     path: ./indonesia.yaml
     health-check:
@@ -44,7 +44,7 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
   Acak:
     type: http
-    url: "https://bit.ly/3x8RDs2"
+    url: "https://github.com/inovasikecilku/abcd/raw/main/efgh/acak"
     interval: 86400
     path: ./acak.yaml
     health-check:
@@ -157,30 +157,30 @@ rule-providers:
   Hiburan:
     type: http
     behavior: classical
-    url: "https://bit.ly/3RNJ5A9"
+    url: "https://github.com/inovasikecilku/abcd/raw/main/efgh/hiburan"
     path: ./hiburan.yaml
     interval: 86400
   Olshop:
     type: http
     behavior: classical
-    url: "https://bit.ly/3JZ0uUK"
+    url: "https://github.com/inovasikecilku/abcd/raw/main/efgh/olshop"
     path: ./olshop.yaml
     interval: 86400
   Games:
     type: http
     behavior: classical
-    url: "https://bit.ly/3DYJtpT"
+    url: "https://github.com/inovasikecilku/abcd/raw/main/efgh/games"
     path: ./games.yaml
     interval: 86400
   Blocked:
     type: http
     behavior: classical
-    url: "https://bit.ly/3Xfb5Ok"
+    url: "https://github.com/inovasikecilku/abcd/raw/main/efgh/blocked"
     path: ./blocked.yaml
     interval: 86400
   Aplikasi:
     type: http
     behavior: classical
-    url: "https://bit.ly/3YCMh3L"
+    url: "https://github.com/inovasikecilku/abcd/raw/main/efgh/aplikasi"
     path: ./aplikasi.yaml
     interval: 86400
