@@ -1,2 +1,174 @@
 proxies:
 #============ metacube ===========#
+# Akun Shadowsocks, Expired Password reset at week.
+- name: Shadowsocks-UK
+  type: ss
+  server: uk.ssocks.wiki
+  port: 1443
+  cipher: chacha20-ietf-poly1305
+  password: YjA0Z
+  plugin: obfs
+  plugin-opts:
+    mode: tls
+    host: youtube.com
+  udp: true
+# Akun Shadowsocks
+
+# Akun SSH Direct dan Stunnel, Expired 13.07.2025
+- name: SSH-Direct-UK
+  type: ssh
+  server: us1.sshocean.site
+  port: 22
+  username: sshocean-4juli2025-ssh-direct
+  password: 4juli2025-ssh-direct
+
+- name: SSH-Stunnel-ID3
+  type: ssh
+  server: id3.sshocean.site
+  port: 22
+  username: sshocean-6juli2025-ssh-stunnel
+  password: 6juli2025-ssh-stunnel
+# Akun SSH Direct dan Stunnel
+
+# Akun Vmess Websocket, Expired 13.07.2025
+- name: Vmess-WS-SG
+  server: sg.xvmess.site
+  port: 443
+  type: vmess
+  uuid: 917b7ae3-5f4c-5928-b369-47907e82a217v
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: youtube.com
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: sg.xvmess.site
+  udp: true
+
+- name: Vmess-gRPC-SG
+  server: sg.xvmess.site
+  port: 443
+  type: vmess
+  uuid: 917b7ae3-5f4c-5928-b369-47907e82a217v
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: youtube.com
+  network: grpc
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: sg.xvmess.site
+  udp: true
+
+- name: Vmess-XHTTP-SG
+  server: sg.xvmess.site
+  port: 443
+  type: vmess
+  uuid: 917b7ae3-5f4c-5928-b369-47907e82a217v
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: youtube.com
+  network: xhttp
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: sg.xvmess.site
+  udp: true
+
+- name: Vmess-WS-CS-SG
+  server: youtube.com.sg.xvmess.site
+  port: 443
+  type: vmess
+  uuid: 917b7ae3-5f4c-5928-b369-47907e82a217v
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: youtube.com
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: sg.xvmess.site
+  udp: true
+# Akun Vmess Websocket, gRPC, dan XHTTP
+
+# Akun Trojan Go Websocket, Expired 13.07.2025
+- name: Trojan-WS-Sweden
+  server: se.xtls.site
+  port: 443
+  type: trojan
+  password: e6298e01-0f74-4b19-a994-a63ca7a027d7
+  skip-cert-verify: true
+  sni: youtube.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: se.xtls.site
+  udp: true
+
+- name: Trojan-Http-Sweden
+  server: se.xtls.site
+  port: 443
+  type: trojan
+  password: e6298e01-0f74-4b19-a994-a63ca7a027d7
+  skip-cert-verify: true
+  sni: youtube.com
+  network: httpupgrade
+  ws-opts:
+    path: /
+    headers:
+      Host: se.xtls.site
+  udp: true
+
+- name: Trojan-gRPC-Sweden
+  server: se.xtls.site
+  port: 443
+  type: trojan
+  password: e6298e01-0f74-4b19-a994-a63ca7a027d7
+  skip-cert-verify: true
+  sni: youtube.com
+  network: gRPC
+  ws-opts:
+    path: /
+    headers:
+      Host: se.xtls.site
+  udp: true
+
+- name: Trojan-WS-CS-Sweden
+  server: youtube.com.se.xtls.site
+  port: 443
+  type: trojan
+  password: e6298e01-0f74-4b19-a994-a63ca7a027d7
+  skip-cert-verify: true
+  sni: se.xtls.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: se.xtls.site
+  udp: true
+# Akun Trojan Websocket, httpupgrade, dan gRPC
+
+# Akun Wireguard Websocket, Expired 13.07.2025
+- name: Wireguard
+  type: wireguard
+  private-key: cOmuG5D3p4L3kCQSnH9f9Qk4bqaLoZCFpAYZeKgh4EE=
+  server: youtube.com.se.vpnlabs.site
+  port: 51820
+  ip: 10.66.66.10/32
+  ipv6: fd42:42:42::10/128
+  public-key: RblqNjmOfdfkUPopc7hlsQkgB+Rzc8up4s6pmE2lJUc=
+  pre-shared-key: tAwtj7M1ypi/D2adR3BlL14Ar50t3PCVlkN59VOl700=
+  udp: true
+  dns: 1.1.1.1,1.0.0.1
+  allowed-ips: 0.0.0.0/0,::/0
+#============ metacube ===========#
